@@ -1,0 +1,31 @@
+metadata_version: 1
+name: 'Revisiting Audio Analysis Algorithms for Asthma Medication Adherence: Evaluation
+  with the RDA Benchmark Suite'
+description: Asthma is a common, usually long-term respiratory disease with negative
+  impact on society and the economy worldwide. Treatment involves using medical devices
+  (inhalers) that distribute medicationto the airways, and its efficiency depends
+  on the precision of the inhalation technique. Health monitoring systems equipped
+  with sensors and embedded with sound signal detection enable the recognition of
+  drug actuation and could be powerful tools for reliable audio content analysis.
+  This paper revisits audio pattern recognition and machine learning techniques for
+  asthma medication adherence assessment and presents the Respiratory and Drug Actuation
+  (RDA)Suite for benchmarking and further research. The RDA Suite includes a set of
+  tools for audio processing, feature extraction and classification and is provided
+  along with a dataset consisting of respiratory and drug actuation sounds. The classification
+  models in RDA areimplemented based on conventional and advanced machine learning
+  and deep network architectures. This study provides a comparative evaluation of
+  the implemented approaches, examines potential improvements and discusses challenges
+  and future tendencies.
+authors:
+- name: Stavros Nousias
+  affiliations:
+  - name: University of Patras
+- name: Nikos Dimitris Fakotakis
+  affiliations:
+  - name: University of Patras
+- name: Gerasimos Arvanitis
+  affiliations:
+  - name: University of Patras
+- name: Eva Zacharaki
+  affiliations:
+  - name: University of Patras

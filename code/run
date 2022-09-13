@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -ex
+python -u author_notes.py "$@"
+python -u resultsTemplate.py "$@"
+python -u evaluate_cnn.py "$@"
+python -u evaluate_ml_models.py "$@"
+python -u evaluate_lstm.py "$@"
+
