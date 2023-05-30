@@ -42,6 +42,10 @@ import itertools
 from lstm.config import LstmConfig
 from lstm.modeling import inhalerPredictor
 np.set_printoptions(formatter={'float': lambda x: "{0:0.3f}".format(x)})
+import tensorflow as tf
+import gc
+
+
 
 resultsTarget='../results/json_data.json'
 print("Evaluation with 10-fold cross validation ... please be patient.")
@@ -103,6 +107,9 @@ for classifierSelect in ["lstm"]:
                 # generatorToTest=splitfmns
                 generatorToTest = itertools.islice(splitfmns, nFoldToRun)
                 for train_fnms, test_fnms in generatorToTest:
+
+                    print(gc.collect()) # if it's done something you should see a number being outputted
+
                     # Trainset
                     currentFold=currentFold+1
                     print("Training ... please be patient")

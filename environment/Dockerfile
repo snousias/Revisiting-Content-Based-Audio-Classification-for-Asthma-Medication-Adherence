@@ -3,10 +3,15 @@ FROM registry.codeocean.com/codeocean/miniconda3:4.9.2-cuda11.7.0-cudnn8-ubuntu2
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+RUN pip install -U tensorflow-gpu
+RUN pip install keras
+RUN pip install -U tensorflow-estimator
+
+
 RUN conda install -y \
-        keras-gpu==2.4.3 \
         matplotlib==3.5.1 \
         pandas==1.4.2 \
         scikit-learn==1.0.2 \
-        tensorflow==2.4.1 \
     && conda clean -ya
+
+

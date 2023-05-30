@@ -1,9 +1,5 @@
 # Evaluation of content based audio classification algorithms for asthma medication adherence 
 
-## Authors
-- [Stavros Nousias](https://github.com/snousias)
-
-
 ## Introduction
 
 Asthma is a common, usually long-term respiratory disease with negative impact on society and the economy worldwide. Treatment involves using medical devices (inhalers) that distribute medicationto the airways, and its efficiency depends on the precision of the inhalation technique. Health monitoring systems equipped with sensors and embedded with sound signal detection enable the recognition of drug actuation and could be powerful tools for reliable audio content analysis. This paper revisits audio pattern recognition  and  machine  learning  techniques  for  asthma  medication  adherence  assessment  and  presents the Respiratory and Drug Actuation (RDA)Suite  for benchmarking and further research.  This suite includes  a  set  of  tools  for  audio  processing,  feature  extraction  and  classification  and  is  provided  along with a dataset consisting of respiratory and drug actuation sounds.  This study compares a series of classifiers namely SVM, Random Forests, AdaBoost, LSTMs, CNN for spectral, cepstral, MFCC and temporal features.

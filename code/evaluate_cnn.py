@@ -41,6 +41,10 @@ from dataread import fetchAnnotatedFilenames,fetchDataAndLabelsCNN
 from network import build_model
 np.set_printoptions(formatter={'float': lambda x: "{0:0.3f}".format(x)})
 
+import tensorflow as tf
+import gc
+
+
 resultsTarget='../results/json_data.json'
 print("Evaluation with 10-fold cross validation ... please be patient.")
 fromScratch=True
@@ -48,7 +52,7 @@ doStore=False
 for classifierSelect in ["cnn"]:
     for feature in ["time"]:
         for testscheme in ["multi", "single", "loso"]:
-            for loadAnnotatedSubsetOnly in [True,False]:
+            for loadAnnotatedSubsetOnly in [True]:
 
 
                 if not loadAnnotatedSubsetOnly:
@@ -105,6 +109,8 @@ for classifierSelect in ["cnn"]:
                 # generatorToTest=splitfmns
                 generatorToTest = itertools.islice(splitfmns, nFoldToRun)
                 for train_fnms, test_fnms in generatorToTest:
+                    print(gc.collect()) # if it's done something you should see a number being outputted
+
                     currentFold=currentFold+1
                     print("Training verbose is inactive... please be patient")
                     # Trainset
