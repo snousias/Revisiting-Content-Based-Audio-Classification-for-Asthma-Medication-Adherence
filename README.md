@@ -5,6 +5,9 @@
 Asthma is a common, usually long-term respiratory disease with negative impact on society and the economy worldwide. Treatment involves using medical devices (inhalers) that distribute medicationto the airways, and its efficiency depends on the precision of the inhalation technique. Health monitoring systems equipped with sensors and embedded with sound signal detection enable the recognition of drug actuation and could be powerful tools for reliable audio content analysis. This paper revisits audio pattern recognition  and  machine  learning  techniques  for  asthma  medication  adherence  assessment  and  presents the Respiratory and Drug Actuation (RDA)Suite  for benchmarking and further research.  This suite includes  a  set  of  tools  for  audio  processing,  feature  extraction  and  classification  and  is  provided  along with a dataset consisting of respiratory and drug actuation sounds.  This study compares a series of classifiers namely SVM, Random Forests, AdaBoost, LSTMs, CNN for spectral, cepstral, MFCC and temporal features.
 
 
+
+
+
 ## Demo on code ocean with data
 
 
@@ -78,4 +81,22 @@ python evaluate_cnn.py
 ```
 
 
+
+## Citation
+
+```
+Fakotakis, D.N., Nousias, S., Arvanitis, G., Zacharaki, E.I. and Moustakas, K., 2023. AI Sound Recognition on Asthma Medication Adherence: Evaluation With the RDA Benchmark Suite. IEEE Access, 11, pp.13810-13829.
+```
+
+```
+@article{fakotakis2023ai,
+  title={AI Sound Recognition on Asthma Medication Adherence: Evaluation With the RDA Benchmark Suite},
+  author={Fakotakis, Dimitris Nikos and Nousias, Stavros and Arvanitis, Gerasimos and Zacharaki, Evangelia I and Moustakas, Konstantinos},
+  journal={IEEE Access},
+  volume={11},
+  pages={13810--13829},
+  year={2023},
+  publisher={IEEE}
+}
+```
 
